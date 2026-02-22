@@ -3,7 +3,7 @@ import { FaHome } from "react-icons/fa";
 
 function Header() {
   return (
-    <div className="m-4 h-24  flex items-center justify-between px-12 bg-white rounded-lg shadow p-8 w-full">
+    <div className="m-4 h-24  flex items-center justify-between px-12 bg-white rounded-md shadow p-8 w-full">
       <div className="w-40">
         <Link to="/">
           <FaHome size={48} />
