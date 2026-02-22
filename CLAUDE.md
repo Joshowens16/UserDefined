@@ -1,6 +1,14 @@
-# FullstackBoilerplate
+# userDefined
 
-Fullstack web app monorepo with a React frontend and Express backend.
+A web app where users create and track their own custom metrics. Fullstack monorepo with a React frontend and Express backend.
+
+## Development Style
+
+- **The user is coding this project themselves.** Claude's role is to advise, answer questions, debug, and explain — NOT to write large chunks of code unprompted.
+- Do NOT generate full files, features, or multi-file implementations unless the user explicitly asks for it (e.g., "write this for me", "implement this", "code this up").
+- Default to: guidance, code snippets, suggestions, and reviews. Let the user drive implementation.
+- When the user asks "how do I do X?", respond with an explanation and small illustrative snippets — do not produce a complete implementation.
+- If the user shares code for review, focus on feedback rather than rewriting it.
 
 - **Frontend**: TypeScript, React 19, Tailwind CSS v4, Vite, React Router — in `frontend/`
 - **Backend**: TypeScript, Express, Prisma, PostgreSQL — in `backend/`
@@ -24,6 +32,7 @@ npm run dev:backend
 ## Key Paths
 
 ### Frontend
+
 - `frontend/src/pages/` — route-level React components (PascalCase): Home, Login, Register
 - `frontend/src/components/` — reusable UI components
 - `frontend/src/context/AuthContext.tsx` — auth state provider (user, token, login/register/logout)
@@ -33,6 +42,7 @@ npm run dev:backend
 - `frontend/vite.config.ts` — Vite config, proxies `/api` → backend on port 3000
 
 ### Backend
+
 - `backend/src/index.ts` — Express app entry, dotenv, CORS, JSON parsing, route registration
 - `backend/src/routes/` — API route modules (register in `index.ts` under `/api` prefix)
 - `backend/src/routes/auth.ts` — auth routes: POST `/api/auth/register`, POST `/api/auth/login`, GET `/api/auth/me`
