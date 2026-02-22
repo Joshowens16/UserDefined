@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <AuthProvider>
-        <div className="min-h-screen bg-gray-50">
+        <div className="min-h-screen flex flex-col">
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
