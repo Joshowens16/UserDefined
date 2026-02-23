@@ -11,9 +11,6 @@ backend/prisma/*.db-journal
 frontend/dist/
 backend/dist/
 
-# Internal docs
-docs/
-
 # IDE
 .vscode/
 .idea/
