@@ -5,7 +5,7 @@ import { useAuth } from "../context/AuthContext";
 function Header() {
   const { user, logout } = useAuth();
   return (
-    <div className="m-4 h-24  flex items-center justify-between px-12 bg-white rounded-lg shadow p-8 w-full">
+    <div className="m-4 h-24 flex items-center justify-between px-12 bg-white rounded-lg shadow p-8">
       <div className="w-40">
         <Link to="/">
           <FaHome size={48} />
